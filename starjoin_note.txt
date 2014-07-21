@@ -1,0 +1,57 @@
+select * 
+from info_facts inf left join items itm on (itm.item_id = inf.item_id)
+                    left join vehicles veh on (veh.vehicle_id = inf.vehicle_id)
+where itm.item_id = 100;
+
+select *
+from vehicles veh left join drivers dri on (dri.driver_id = veh.driver_id)
+order by veh.vehicle_id;
+
+
+info_facts
+----------
+info_id
+item_id
+time_id
+vehicle_id
+location_id
+...
+
+locations
+---------
+location_id
+latitude
+longitude
+...
+
+
+vehicles
+--------
+vehicle_id
+driver_id
+...
+
+drivers
+-------
+driver_id
+...
+
+
+items
+-----
+item_id
+delivery_status
+...
+
+
+times
+-------
+time_id
+...
+
+
+
+
+
+
+ 
