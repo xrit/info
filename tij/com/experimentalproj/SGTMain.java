@@ -10,7 +10,7 @@ public class SGTMain {
         sgt0.printCurrentTime();
         System.out.println();
         for (int i = 0; i < 3;  i++) {
-            Thread.sleep(10000); // sleep for 10 seconds
+            Thread.sleep(4000); // sleep for 4 seconds
             SGT sgt = SGT.getInstance();
             sgt.printTimestamp();
             sgt.printCurrentTime();
