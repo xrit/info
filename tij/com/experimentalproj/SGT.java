@@ -1,9 +1,13 @@
 package com.experimentalproj;
 
 public class SGT {
-    private static SGT ourInstance = new SGT();
+    private static SGT ourInstance;
 
     public static SGT getInstance() {
+        if (ourInstance == null) {
+          ourInstance = new SGT();
+          System.out.println("Instance created");
+        }
         return ourInstance;
     }
 
