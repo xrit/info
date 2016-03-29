@@ -1,0 +1,8 @@
+drop table if exists itable2016;
+create table itable2016 (id int primary key, info varchar(100));
+insert into itable2016 values (101,'abc');
+insert into itable2016 values (102,'ijk');
+insert into itable2016 values (103,'xxx');
+insert into itable2016 values (104,'xyz');
+select * from itable2016 order by id desc;
+
