@@ -1,0 +1,31 @@
+To display PostgreSQL script
+
+cat itable.psql 
+
+drop table if exists itable2016;
+create table itable2016 (id int primary key, info varchar(100));
+insert into itable2016 values (101,'abc');
+insert into itable2016 values (102,'ijk');
+insert into itable2016 values (103,'xxx');
+insert into itable2016 values (104,'xyz');
+select * from itable2016 order by id desc;
+
+To run psql from command line
+
+psql -h localhost idb postgres < itable.psql 
+
+DROP TABLE
+NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "itable2016_pkey" for table "itable2016"
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ id  | info 
+-----+------
+ 104 | xyz
+ 103 | xxx
+ 102 | ijk
+ 101 | abc
+(4 rows)
+
