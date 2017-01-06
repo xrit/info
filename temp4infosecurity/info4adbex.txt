@@ -1,0 +1,4 @@
+Example for adb shell script
+
+adb shell run-as com.ex.phonecallsmanager cat /data/data/com.ex.phonecallsmanager/files/PCallMgr.log > PhoneCallsLog.txt
+
