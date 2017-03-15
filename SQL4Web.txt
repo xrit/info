@@ -1,1 +1,4 @@
 http://.../SQL4Web/servlet/SQL4Web
+(1) Do VPC 
+(2) Redirect2IP    
+(3) OpenBrowser 
