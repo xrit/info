@@ -6,4 +6,5 @@ echo
 echo
 echo "Report Date/Time:"
 date
-
+echo
+echo "Copyright (C) 2017 http://admylocation.com/ " 
