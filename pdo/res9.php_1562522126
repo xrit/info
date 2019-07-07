@@ -1,0 +1,32 @@
+<?php
+
+function fetchdata () {
+# Connect to MySQL database system
+$link = mysqli_connect('xxxxxxxxx', 'xxxxxxx', 'xxxxxxxx', '?db')
+    or die('Could not connect: ' . mysql_error());
+mysqli_select_db($link, '?db') or die('Could not select database');
+
+$query = 'SELECT tid, ipaddress, LEFT(xinfo,12) info FROM ?????????? ORDER BY tid DESC LIMIT 9';
+$result = mysqli_query($link, $query);    
+$data = array();
+while ($row = mysqli_fetch_assoc($result)) {
+    $rdata = array(
+        'timeid' => 't' . $row['tid'],  
+        'ipinfo' => $row['info'] . ' - ' . $row['ipaddress'] 
+    );
+    array_push($data, $rdata);
+  }
+return $data;
+}
+
+$arr = fetchdata();
+
+echo "\nvar_dump(...)\n";
+var_dump($arr);
+echo "\nprint_r(...)\n";
+print_r($arr);
+echo "\njson_encode(...)\n";
+echo json_encode($arr);
+
+?>
+
