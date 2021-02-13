@@ -1,3 +1,0 @@
-devopstest
-pc
-devtest
