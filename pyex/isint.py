@@ -13,5 +13,5 @@ def isint(s):
 if (len(sys.argv) == 2):
   print (isint(sys.argv[1]))
 else:
-  print ("usage: sys.argv[0] <argument>")
+  print ("usage: %s <argument>" % sys.argv[0])
 
