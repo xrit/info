@@ -2,7 +2,7 @@
 
 if [ "$1" == "" ] || [ "$2" == "" ] || [ "$3" == "" ]
 then
-  echo "usage: $0 <from YYYY-MM-DD> <to YYYY-MM-DD> <repo dir>"
+  echo "usage: $0 <from YYYY-MM-DD> <to YYYY-MM-DD> <git repo dir>"
   exit 0
 fi
 
