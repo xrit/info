@@ -1,0 +1,4 @@
+create table contactinfo_trigger_tbl (
+   tid datetime,  
+   act varchar(10)
+);

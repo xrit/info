@@ -1,0 +1,6 @@
+create  
+   trigger update_contactinfo_trigger
+   after update 
+   on contactinfo for each row
+   insert into contactinfo_trigger_tbl values (utc_timestamp(), 'update')
+;
