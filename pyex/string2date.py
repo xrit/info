@@ -3,7 +3,7 @@
 import datetime
 import sys
 
-if (len(sys.argv) <> 2):
+if (len(sys.argv) != 2):
    print("\n   Usage:   %s  <YYYY-MM-DD> \n" % sys.argv[0])
    sys.exit(0)
 
